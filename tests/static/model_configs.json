@@ -1,0 +1,62 @@
+{
+    "vanilla_ggnn_nap": {
+        "num_timestamps": 2,
+        "hidden_size": 200,
+        "num_activities": 11,
+        "learning_rate": 0.001
+    },
+    "vanilla_ggnn_ntp": {
+        "num_timestamps": 2,
+        "hidden_size": 200,
+        "num_activities": 11,
+        "learning_rate": 0.001
+    },
+    "vanilla_ggnn_bop": {
+        "num_timestamps": 2,
+        "hidden_size": 200,
+        "num_activities": 11,
+        "learning_rate": 0.001
+    },
+    "vanilla_gru_nap": {
+        "num_activities": 11,
+        "num_layers": 2,
+        "hidden_size": 200,
+        "learning_rate": 0.001
+    },
+    "vanilla_gru_bop": {
+        "num_activities": 11,
+        "num_layers": 2,
+        "hidden_size": 200,
+        "learning_rate": 0.001
+    },
+    "vanilla_gru_ntp": {
+        "num_activities": 11,
+        "num_layers": 2,
+        "hidden_size": 200,
+        "learning_rate": 0.001
+    },
+    "vanilla_transformer_nap": {
+        "num_activities": 11,
+        "num_layers": 2,
+        "num_heads": 2,
+        "hidden_size": 200,
+        "dropout": 0.1,
+        "learning_rate": 0.001
+    },
+    "vanilla_transformer_ntp": {
+        "num_activities": 11,
+        "num_layers": 2,
+        "num_heads": 2,
+        "hidden_size": 200,
+        "dropout": 0.1,
+        "learning_rate": 0.001
+    },
+    "vanilla_transformer_bop": {
+        "num_activities": 11,
+        "num_layers": 2,
+        "num_heads": 2,
+        "hidden_size": 200,
+        "dropout": 0.1,
+        "learning_rate": 0.001
+    }
+}

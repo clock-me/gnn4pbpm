@@ -1,0 +1,41 @@
+{
+    "dataset": "helpdesk",
+    "process_subset": null,
+    "model": "gat_gru",
+    "task": "nap",
+    "group": "test",
+    "model_config": {
+        "learning_rate": 0.001,
+        "num_activities": 18,
+        "hidden_size": 64,
+        "num_gru_layers": 2, 
+        "num_node_types": 50,
+        "num_gat_heads": 50,
+        "num_gat_layers": 2
+    },
+    "embeddings": {
+        "slug": "Act2Vec",
+        "vectorsize": 16,
+        "start_alpha": 0.025,
+        "n_epochs": 10,
+        "learning_rate": 0.002,
+        "window": 3
+    },
+    "batch_size": 32,
+    "preprocessor_slugs": [
+        "ActivitySequenceExtractor",
+        "TimeSequenceExtractor",
+        "StaticGraphBuilder"
+    ],
+    "train_config": {
+        "max_epochs": 10,
+        "accelerator": "mps"
+    },
+    "run_name": "baselines_nap",
+    "graph_builder_config": {
+        "sequential": true,
+        "graph_type": "bpmn",
+        "add_edges_type": "all"
+    },
+    "time_type": "absolute"
+}
